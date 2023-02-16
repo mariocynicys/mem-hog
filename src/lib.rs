@@ -10,7 +10,7 @@ const DUMMY_DATA_COUNT: usize = 512;
 /// The type of the dummy data field in `BigStruct`.
 /// If you set dummy data to a static size array: `type DummyData = [u8; DUMMY_DATA_COUNT];`
 /// there is no difference between iter and non-iter fills, not sure why.
-type DummyData = [u8; DUMMY_DATA_COUNT];//`Vec<u8>;
+type DummyData = Vec<u8>;
 
 /// A struct to hold the `Value` for `Key` plus some dummy data to bloat the memory.
 pub struct BigStruct {
